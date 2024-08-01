@@ -73,7 +73,7 @@ sudo ufw allow 22 #sshシャットアウト対策
 
 # Install yarn
 echo "installing yarn"
-sudo npm install -g yarn
+sudo npm install -g yarn --loglevel verbose
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
